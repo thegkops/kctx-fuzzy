@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "kctx-fuzzy"
@@ -8,7 +8,6 @@ version = "0.1.0"
 description = "kubectl context and namespace switcher with built-in fuzzy search — no external fzf required"
 authors = [{ name = "thegkops" }]
 license = { text = "MIT" }
-readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 keywords = ["kubectl", "kubernetes", "context", "namespace", "fuzzy", "k8s"]
 classifiers = [
